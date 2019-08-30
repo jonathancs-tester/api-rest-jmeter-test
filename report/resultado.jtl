@@ -1,0 +1,7 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1565908105843,132,Listar cliente pelo identificador,200,OK,Requisição GET pelo id  - Usuários 2-1,text,true,,217,128,1,6,http://localhost:8080/rest-api/1,130,0,71
+1565908105841,146,LIstar todos clientes,200,OK,Requisição GET collection - Usuários 1-1,text,true,,2346,126,1,5,http://localhost:8080/rest-api,146,0,74
+1565908105841,259,Adicionar cliente,200,OK,Requisição POST - Usuários 3-1,text,true,,222,255,1,4,http://localhost:8080/rest-api,259,0,74
+1565908105841,296,Adicionar cliente,200,OK,Requisição PUT nome  - Usuários 4-1,text,true,,225,259,1,3,http://localhost:8080/rest-api/3,296,0,71
+1565908105841,297,Adicionar cliente,200,OK,Requisição PUT cpf  - Usuários 5-1,text,true,,228,262,1,3,http://localhost:8080/rest-api/3,297,0,75
+1565908105841,302,Adicionar cliente,200,OK,Requisição PUT endereço  - Usuários 6-1,text,true,,224,258,1,1,http://localhost:8080/rest-api/3,302,0,72

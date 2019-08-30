@@ -1,0 +1,167 @@
+{
+	"id": "76760464-df0c-16bc-3aa6-f462d411a1ed",
+	"name": "Alura - My project",
+	"description": "",
+	"order": [
+		"f973fe04-294c-f174-417f-6554683941fa",
+		"3583c51d-4622-5a35-cdd3-d9ee6f41c762",
+		"4bfd32b1-d9ea-39af-5652-488ae9dfc28f",
+		"6f8e4eda-7e71-369a-d4f2-e6bd9dfea036",
+		"45f3a9f9-9790-a133-0816-26fe9050ab2e"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1565830097747,
+	"owner": "2764714",
+	"public": false,
+	"requests": [
+		{
+			"id": "3583c51d-4622-5a35-cdd3-d9ee6f41c762",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/clientes",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "tests[\"Status code is 201\"] = responseCode.code === 201 || 200;\r\ntests[\"Response time is less than 60000 ms\"] = responseTime < 60000;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567202870392,
+			"name": "GET - Read Client",
+			"description": "",
+			"collectionId": "76760464-df0c-16bc-3aa6-f462d411a1ed",
+			"responses": [],
+			"rawModeData": "{\r\n\"nome\":\"Carolina\",\r\n\"endereco\":\"Itajuba\",\r\n\"cpf\":\"54332\"\r\n}"
+		},
+		{
+			"id": "45f3a9f9-9790-a133-0816-26fe9050ab2e",
+			"headers": "//Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "http://localhost:8080/clientes/31",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"tests": "tests[\"Status code is 201\"] = responseCode.code === 201 || 200;\r\ntests[\"Response time is less than 60000 ms\"] = responseTime < 60000;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567202868474,
+			"name": "DELETE - Delete Client",
+			"description": "",
+			"collectionId": "76760464-df0c-16bc-3aa6-f462d411a1ed",
+			"responses": []
+		},
+		{
+			"id": "4bfd32b1-d9ea-39af-5652-488ae9dfc28f",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/clientes/40",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "tests[\"Status code is 201\"] = responseCode.code === 201 || 200;\r\ntests[\"Response time is less than 60000 ms\"] = responseTime < 60000;\r\n\r\n\r\nvar responseJSON = JSON.parse(responseBody);\r\ntests['CPF é valido'] = (responseJSON.cpf == \"54332\");\r\n\r\n\r\n\r\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567202869532,
+			"name": "GET - Read Client by ID",
+			"description": "",
+			"collectionId": "76760464-df0c-16bc-3aa6-f462d411a1ed",
+			"responses": [],
+			"rawModeData": "{\r\n\"nome\":\"Carolina\",\r\n\"endereco\":\"Itajuba-MG\",\r\n\"cpf\":\"54332\"\r\n}"
+		},
+		{
+			"id": "6f8e4eda-7e71-369a-d4f2-e6bd9dfea036",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/clientes/48",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "tests[\"Status code is 201\"] = responseCode.code === 201 || 200;\r\ntests[\"Response time is less than 60000 ms\"] = responseTime < 60000;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567202867404,
+			"name": "PUT - Update Client",
+			"description": "",
+			"collectionId": "76760464-df0c-16bc-3aa6-f462d411a1ed",
+			"responses": [],
+			"rawModeData": "{\r\n\"nome\":\"Jonathan\",\r\n\"endereco\":\"Itajuba-MG\",\r\n\"cpf\":\"54332\"\r\n}"
+		},
+		{
+			"id": "f973fe04-294c-f174-417f-6554683941fa",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/clientes",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "tests[\"Status code is 201\"] = responseCode.code === 201 || 200;\r\ntests[\"Response time is less than 60000 ms\"] = responseTime < 60000;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567202872181,
+			"name": "POST - Create Client",
+			"description": "",
+			"collectionId": "76760464-df0c-16bc-3aa6-f462d411a1ed",
+			"responses": [],
+			"rawModeData": "{\r\n\"nome\":\"Jonathan\",\r\n\"endereco\":\"Itajuba\",\r\n\"cpf\":\"123456\"\r\n}"
+		}
+	]
+}

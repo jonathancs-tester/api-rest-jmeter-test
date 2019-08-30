@@ -1,0 +1,62 @@
+{
+  "Adicionar cliente" : {
+    "transaction" : "Adicionar cliente",
+    "sampleCount" : 4,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 288.5,
+    "minResTime" : 259.0,
+    "maxResTime" : 302.0,
+    "pct1ResTime" : 302.0,
+    "pct2ResTime" : 302.0,
+    "pct3ResTime" : 302.0,
+    "throughput" : 13.245033112582782,
+    "receivedKBytesPerSec" : 2.9070519453642385,
+    "sentKBytesPerSec" : 3.343594784768212
+  },
+  "Listar cliente pelo identificador" : {
+    "transaction" : "Listar cliente pelo identificador",
+    "sampleCount" : 1,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 132.0,
+    "minResTime" : 132.0,
+    "maxResTime" : 132.0,
+    "pct1ResTime" : 132.0,
+    "pct2ResTime" : 132.0,
+    "pct3ResTime" : 132.0,
+    "throughput" : 7.575757575757576,
+    "receivedKBytesPerSec" : 1.6054095643939392,
+    "sentKBytesPerSec" : 0.9469696969696969
+  },
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 6,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 238.66666666666666,
+    "minResTime" : 132.0,
+    "maxResTime" : 302.0,
+    "pct1ResTime" : 302.0,
+    "pct2ResTime" : 302.0,
+    "pct3ResTime" : 302.0,
+    "throughput" : 19.867549668874172,
+    "receivedKBytesPerSec" : 11.194898592715232,
+    "sentKBytesPerSec" : 4.164942052980132
+  },
+  "LIstar todos clientes" : {
+    "transaction" : "LIstar todos clientes",
+    "sampleCount" : 1,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 146.0,
+    "minResTime" : 146.0,
+    "maxResTime" : 146.0,
+    "pct1ResTime" : 146.0,
+    "pct2ResTime" : 146.0,
+    "pct3ResTime" : 146.0,
+    "throughput" : 6.8493150684931505,
+    "receivedKBytesPerSec" : 15.691887842465754,
+    "sentKBytesPerSec" : 0.8427868150684932
+  }
+}
